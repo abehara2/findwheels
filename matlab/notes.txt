@@ -1,0 +1,10 @@
+1. tail command - 
+ tail -n <number of lines> <file>
+ - prints out last 'n' lines of the file
+
+2. cut command, separates each line it gets as input by a delimiter
+	cut -f1,2,5 -d','
+   - print out 1st , 2nd and 5th fields of the input separated by a ','ie comma
+
+3. run a script as follows
+ ./<script name>

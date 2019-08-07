@@ -1,0 +1,42 @@
+function e = parseCodebook
+    %csvfile = '/Users/ashankbehara/Desktop/FIND-Wheels/Session1/Codebook_Pilot.csv'
+    csvfile = 'final_pilot.csv';
+    %csvfile = 'test_pilot.csv'
+    %[a, b, c, d, e, f, g, h,i, j, k] = textread('/Users/ashankbehara/Desktop/FIND-Wheels/Session1/Codebook_Pilot.csv', '%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s', "headerlines", 4);
+    %[a, b, c, d, e, f, g, h, i, j] = textread(csvfile, '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s', "delimiter", ",");
+    [a, b, c, d, e] = textread(csvfile, '%s,%s,%s,%s,%s',"delimiter", ",");
+    %[a, b, c, d, e, f, g, h] = textread('test.csv', '%d,%s,%s,%s,%s,%s,%s,%s', "headerlines", 5);
+    %xx = textread('test.csv', '%s,%s,%s,%s,%s,%s,%s,%s', "headerlines", 5);
+
+%    time = e{19,1}
+%    strcat(time)
+%    class(time)
+    %codebooktrial =  codebook(5:end, 4:7);
+    %codebooktrial = codebooktrial(19,:)
+endfunction
+
+
+%csvfile = '/Users/ashankbehara/Desktop/FIND-Wheels/Session1/Codebook_Pilot.csv'
+csvfile = '/Users/ashankbehara/desktop/FIND-Wheels/Session1/Trial19/Aditya_20_GA_Wrist.csv';
+%csvfile = 'test_pilot.csv'
+%[a, b, c, d, e, f, g, h,i, j, k] = textread('/Users/ashankbehara/Desktop/FIND-Wheels/Session1/Codebook_Pilot.csv', '%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s', "headerlines", 4);
+%[a, b, c, d, e, f, g, h, i, j] = textread(csvfile, '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s', "delimiter", ",");
+[a, b, c, d, e, f, g] = textread(csvfile, '%s,%f,%f,%f,%d,%d,%f',"delimiter", ",", "headerlines", 100);
+%[a, b, c, d, e, f, g, h] = textread('test.csv', '%d,%s,%s,%s,%s,%s,%s,%s', "headerlines", 5);
+%xx = textread('test.csv', '%s,%s,%s,%s,%s,%s,%s,%s', "headerlines", 5);
+
+%    time = e{19,1}
+%    strcat(time)
+%    class(time)
+%codebooktrial =  codebook(5:end, 4:7);
+%codebooktrial = codebooktrial(19,:)
+
+length(b)
+length(c)
+
+x = reshape(b, length(b), 1);
+
+y = reshape(c, length(b), 1);
+
+
+horzcat(a, b,c,d)
