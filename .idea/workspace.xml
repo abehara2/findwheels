@@ -27,8 +27,8 @@
       <file leaf-file-name="SynchroniseData.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/matlab/SynchroniseData.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1243">
-              <caret line="139" column="4" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+            <state relative-caret-position="1183">
+              <caret line="189" column="27" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -36,8 +36,8 @@
       <file leaf-file-name="CodebookTest" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matlab/CodebookTest">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+            <state relative-caret-position="585">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -75,7 +75,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1417" />
@@ -181,15 +181,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565066445637</updated>
-      <workItem from="1565066446876" duration="27287000" />
+      <workItem from="1565066446876" duration="43017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27287000" />
+    <option name="totallyTimeSpent" value="43017000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -237,15 +237,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matlab/CodebookTest">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="585">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/matlab/SynchroniseData.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1243">
-          <caret line="139" column="4" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+        <state relative-caret-position="1183">
+          <caret line="189" column="27" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
         </state>
       </provider>
     </entry>
