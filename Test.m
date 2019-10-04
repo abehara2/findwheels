@@ -1,0 +1,1 @@
+codebook = codebookdata(5:end, 4:7);disp(codebook);disp(len);

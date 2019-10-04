@@ -54,11 +54,8 @@ for trial = 1 : totaltrials
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
     % CROPPING DATA BY START TIME %
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    %%%%%%%%%%%%%%%%%%%
-    %Vicon Truncation %
-    %%%%%%%%%%%%%%%%%%%
-    
+   
+    %Vicon Truncation
     ViconStartTime = codebooktrial(1,3);
     ViconFrames = Vicondata(:,1);
     RowStartIndex = 1;
@@ -69,19 +66,15 @@ for trial = 1 : totaltrials
         end
     end
     Vicondatasmall = Vicondata(RowStartIndex:end,:);
-    
-    %Failing at LINE 75
-    
-    Vicondata = NaN(length(Vicondatasmall(:, 1)*5), length(Vicondatasmall(1,:)));
+    Vicondata = zeros(length(Vicondatasmall(:, 1)*5), length(Vicondatasmall(1,:)));
     Vicondata(1,:) = Vicondatasmall(1,:);
     for i = 2:length(Vicondatasmall(:, 1))
       Vicondata((i-1)*5 + 1, :) = Vicondatasmall(i, :);
     end
     %22222
 
-	%%%%%%%%%%%%%%%%%%%%%%%
-    %GENEActiv Truncation %
-    %%%%%%%%%%%%%%%%%%%%%%%
+
+    %GENEActiv Truncation
     [a, b, c, d, e, f, g, h,i, j, k,l] = textread('/Users/ashankbehara/Desktop/FIND-Wheels/Session1/Codebook_Pilot.csv', '%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s', "headerlines", 4,"delimiter", ",");
     GENETime = g{trial,1};
     strcat('"', GENETime, '"')
@@ -98,10 +91,7 @@ for trial = 1 : totaltrials
         end
     end
     GENEdataSmall = GENEdata(GENERowStartIndex:end,:);
-    
-    %Failing at LINE 104f
-    
-    GENEdata = NaN(length(GENEdataSmall(:, 1)*5) , length(GENEdataSmall(1,:)));
+    GENEdata = zeros(length(GENEdataSmall(:, 1)*5) , length(GENEdataSmall(1,:)));
     GENEdata(1,:) = GENEdataSmall(1,:);
     for i = 2:length(GENEdataSmall(:, 1))
       GENEdata((i-1)*5 + 1, :) = GENEdataSmall(i, :);
@@ -177,7 +167,6 @@ for trial = 1 : totaltrials
 %%%%%%%%%%%%%%
 
     finalData = horzcat(FinalTime,GENEActiv,ForcePlate,Vicon);
-    finalData(2654, 2)
     %Data Reads GENE -> FP -> Vicon
     finalFileName = strcat('Session',session,'Trial',trialstring,'.csv');
 

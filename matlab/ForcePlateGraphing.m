@@ -2,15 +2,15 @@
 %Ashank Behara
 subjectID='pilot0';
 T='000_01';
-data = csvread('/Users/ashankbehara/Desktop/FIND-Wheels/Frames-SecondsParsing/SampleForcePlate.csv');
+data = readmatrix('/Users/ashankbehara/Desktop/FIND-Wheels/ForcePlate/SampleForcePlate.csv');
 Force_back = data(2:end,2)';
 Force_front = data(2:end,3)';
 max_Force_back = max(Force_back);
 max_Force_front = max(Force_front);
 min_Force_back = min(Force_back);
 min_Force_front = min(Force_front);
-maxY = max([max_Force_back, max_Force_front]) + 100
-minY = min([min_Force_back, min_Force_front]) - 300
+maxY = max([max_Force_back, max_Force_front]) + 100;
+minY = min([min_Force_back, min_Force_front]) - 300;
 %Back Plate
 figure
 plottitle=['Forceplate Force (N): Trial ' T(5:6) ];
